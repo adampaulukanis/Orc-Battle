@@ -66,3 +66,22 @@
 
 (defun randval (n)
   (1+ (random (max 1 n))))
+
+(defun random-monster ()
+  (let ((m (aref *monsters* (random (length *monsters*)))))
+    (if (monster-dead m)
+        (random-monster)
+        m)))
+
+(defun pick-monster ()
+  (fresh-line)
+  (princ "Monster #:")
+  (let ((x (read)))
+    (if (not (and (integerp x) (>= x 1) (<= x *monster-num*)))
+        (progn (princ "That is not a valid monster number.")
+               (pick-monster))
+        (let ((m (aref *monsters* (1- x))))
+          (if (monster-dead m)
+              (progn (princ "That monster is already dead.")
+                     (pick-monster))
+              m)))))

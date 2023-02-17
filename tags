@@ -13,7 +13,9 @@
 game-loop	main.cl	/^(defun game-loop ()$/;"	f
 init-player	main.cl	/^(defun init-player ()$/;"	f
 orc-battle	main.cl	/^(defun orc-battle ()$/;"	f
+pick-monster	main.cl	/^(defun pick-monster ()$/;"	f
 player-attack	main.cl	/^(defun player-attack ()$/;"	f
 player-dead	main.cl	/^(defun player-dead ()$/;"	f
+random-monster	main.cl	/^(defun random-monster ()$/;"	f
 randval	main.cl	/^(defun randval (n)$/;"	f
 show-player	main.cl	/^(defun show-player ()$/;"	f
