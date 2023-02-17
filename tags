@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+*monster-builders*	main.cl	/^(defparameter *monster-builders* nil)$/;"	f
+*monster-num*	main.cl	/^(defparameter *monster-num* 12)$/;"	f
+*monsters*	main.cl	/^(defparameter *monsters* nil)$/;"	f
+*player-agility*	main.cl	/^(defparameter *player-agility* nil)$/;"	f
+*player-health*	main.cl	/^(defparameter *player-health* nil)$/;"	f
+*player-strength*	main.cl	/^(defparameter *player-strength* nil)$/;"	f
+game-loop	main.cl	/^(defun game-loop ()$/;"	f
+init-player	main.cl	/^(defun init-player ()$/;"	f
+orc-battle	main.cl	/^(defun orc-battle ()$/;"	f
+player-attack	main.cl	/^(defun player-attack ()$/;"	f
+player-dead	main.cl	/^(defun player-dead ()$/;"	f
+randval	main.cl	/^(defun randval (n)$/;"	f
+show-player	main.cl	/^(defun show-player ()$/;"	f
