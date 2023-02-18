@@ -131,3 +131,9 @@
              (princ ", knocking off ")
              (princ x)
              (princ " health points! "))))
+
+(defmethod monster-show (m)
+  (princ "A fierce ")
+  (princ (type-of m)))
+
+(defmethod monster-attack (m))

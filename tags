@@ -14,8 +14,10 @@ game-loop	main.cl	/^(defun game-loop ()$/;"	f
 init-monsters	main.cl	/^(defun init-monsters ()$/;"	f
 init-player	main.cl	/^(defun init-player ()$/;"	f
 monster	main.cl	/^(defstruct monster (health (randval 10)))$/;"	f
+monster-attack	main.cl	/^(defmethod monster-attack (m))$/;"	f
 monster-dead	main.cl	/^(defun monster-dead (m)$/;"	f
 monster-hit	main.cl	/^(defmethod monster-hit (m x)$/;"	f
+monster-show	main.cl	/^(defmethod monster-show (m)$/;"	f
 monsters-dead	main.cl	/^(defun monsters-dead ()$/;"	f
 orc-battle	main.cl	/^(defun orc-battle ()$/;"	f
 pick-monster	main.cl	/^(defun pick-monster ()$/;"	f
