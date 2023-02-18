@@ -119,3 +119,15 @@
          *monsters*)))
 
 (defstruct monster (health (randval 10)))
+
+(defmethod monster-hit (m x)
+  (decf (monster-health m) x)
+  (if (monster-dead m)
+      (progn (princ "You killed the ")
+             (princ (type-of m))
+             (princ "! "))
+      (progn (princ "You hit the ")
+             (princ (type-of m))
+             (princ ", knocking off ")
+             (princ x)
+             (princ " health points! "))))
