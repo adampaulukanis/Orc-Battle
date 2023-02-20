@@ -192,6 +192,7 @@
     (princ "A slime mold wraps around your legs and decreases your agility by ")
     (princ x)
     (princ "! ")
+    (decf *player-agility* x)
     (when (zerop (random 2))
       (princ "It also squirts in your face, taking away a health point! ")
       (decf *player-health*))))
