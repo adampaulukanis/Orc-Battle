@@ -22,7 +22,9 @@ monster-hit	main.cl	/^(defmethod monster-hit ((m hydra) x)$/;"	f
 monster-hit	main.cl	/^(defmethod monster-hit (m x)$/;"	f
 monster-show	main.cl	/^(defmethod monster-show ((m hydra))$/;"	f
 monster-show	main.cl	/^(defmethod monster-show ((m orc))$/;"	f
+monster-show	main.cl	/^(defmethod monster-show ((m slime-mold))$/;"	f
 monster-show	main.cl	/^(defmethod monster-show (m)$/;"	f
+monsters-attack	main.cl	/^(defmethod monsters-attack ((m slime-mold))$/;"	f
 monsters-dead	main.cl	/^(defun monsters-dead ()$/;"	f
 orc-battle	main.cl	/^(defun orc-battle ()$/;"	f
 pick-monster	main.cl	/^(defun pick-monster ()$/;"	f
