@@ -26,7 +26,7 @@
     (fresh-line)
     (map 'list
          (lambda (m)
-           (or (monsters-dead m) (monsters-attack m)))
+           (or (monster-dead m) (monster-attack m)))
          *monsters*)
     (game-loop)))
 
@@ -57,7 +57,7 @@
          (princ "Your double swing has a strength of ")
          (princ x)
          (fresh-line)
-         (monsters-hit (pick-monster) x)
+         (monster-hit (pick-monster) x)
          (unless (monsters-dead)
            (monster-hit (pick-monster) x))))
     (otherwise (dotimes (x (1+ (randval (truncate (/ *player-strength* 3)))))
